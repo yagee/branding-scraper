@@ -11,6 +11,8 @@ dotenv.config({
   path: path.resolve(relativePath + '/.env'),
 });
 
+const CRON_SCHEDULE = '5 0 * * *';
+
 const {
   NAME,
   BRANDING_LINK,
@@ -63,7 +65,7 @@ const cronJob = async () => {
   }
 };
 
-cron.schedule('*/5 * * * *', cronJob);
+cron.schedule(CRON_SCHEDULE, cronJob);
 
 console.log('starting script');
 
