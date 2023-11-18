@@ -6,6 +6,8 @@ const scrape = async function (BRANDING_LINK, appPath) {
   let temp = false;
   // Launch the browser and open a new blank page
   const browser = await puppeteer.launch({
+    // args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    args: ['--no-sandbox'],
     headless: 'new',
   });
 
