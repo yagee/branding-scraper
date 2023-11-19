@@ -53,7 +53,7 @@ const scrape = async function (BRANDING_LINK, appPath) {
 
   console.log('all ok');
 
-  await new Promise((r) => setTimeout(r, 3000));
+  await new Promise((r) => setTimeout(r, 10000));
 
   const frames = page.mainFrame().childFrames();
 
