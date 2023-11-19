@@ -11,7 +11,7 @@ dotenv.config({
   path: path.resolve(relativePath + '/.env'),
 });
 
-const CRON_SCHEDULE = '5 22 * * *';
+const CRON_SCHEDULE = '5 21 * * *';
 
 const {
   NAME,
