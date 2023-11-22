@@ -1,7 +1,11 @@
 {
-  "version": "0.0.9",
+  "version": "1.0.0",
   "type": "module",
   "main": "index.js",
+  "author": {
+    "name": "Roman Ryzhikov",
+    "email": "github@yagee.ru"
+  },
   "scripts": {
     "start": "node index.js"
   },
